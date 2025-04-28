@@ -1,4 +1,22 @@
-# Go Kafka Test
+### 1. Cấu trúc hệ thống Kafka
+
+![Cấu trúc hệ thống](./image/ex001.png)
+
+Hình ảnh trên mô tả cấu trúc tổng quan của hệ thống Kafka, với các thành phần producer, broker và consumer.
+
+### 2. Luồng xử lý tin nhắn
+
+![Luồng xử lý tin nhắn](./image/ex002.png)
+
+Hình ảnh này minh họa quá trình một tin nhắn được gửi từ producer đến Kafka broker và sau đó được consumer xử lý.
+
+### 3. Giao diện Kafka UI
+
+![Giao diện Kafka UI](./image/ex003.png)
+
+Hình ảnh này hiển thị giao diện Kafka UI, nơi bạn có thể theo dõi và quản lý các topic, tin nhắn, và consumer group.
+
+# HƯỚNG DẪN
 
 Dự án này minh họa việc sử dụng Apache Kafka với Go để xây dựng hệ thống producer-consumer đơn giản. Producer nhận tin nhắn từ API endpoint và gửi đến Kafka, và consumer đọc và xử lý các tin nhắn này.
 
@@ -125,23 +143,3 @@ Nếu bạn thấy có độ trễ giữa việc gửi và nhận tin nhắn, h�
 
 - [Kafka Go Client Documentation](https://pkg.go.dev/github.com/segmentio/kafka-go)
 - [Apache Kafka Documentation](https://kafka.apache.org/documentation/)
-
-## Hình ảnh minh họa
-
-### 1. Cấu trúc hệ thống Kafka
-
-![Cấu trúc hệ thống](./image/ex001.png)
-
-Hình ảnh trên mô tả cấu trúc tổng quan của hệ thống Kafka, với các thành phần producer, broker và consumer.
-
-### 2. Luồng xử lý tin nhắn
-
-![Luồng xử lý tin nhắn](./image/ex002.png)
-
-Hình ảnh này minh họa quá trình một tin nhắn được gửi từ producer đến Kafka broker và sau đó được consumer xử lý.
-
-### 3. Giao diện Kafka UI
-
-![Giao diện Kafka UI](./image/ex003.png)
-
-Hình ảnh này hiển thị giao diện Kafka UI, nơi bạn có thể theo dõi và quản lý các topic, tin nhắn, và consumer group.
